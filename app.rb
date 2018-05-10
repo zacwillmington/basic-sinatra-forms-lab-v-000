@@ -11,6 +11,6 @@ class App < Sinatra::Base
             binding.pry
             p.send()
         end
-        erb :team 
+        erb :team
     end
 end
