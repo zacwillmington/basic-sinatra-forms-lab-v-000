@@ -7,11 +7,7 @@ class App < Sinatra::Base
     end
 
     post "/team" do
-        params.each do |p|
-            binding.pry
-             p[0] = App.new
-             p[0] = p[1] 
-        end
+         @name = params[:name]
         erb :team
     end
 end
