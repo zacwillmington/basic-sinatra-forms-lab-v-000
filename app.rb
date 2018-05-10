@@ -9,7 +9,8 @@ class App < Sinatra::Base
     post "/team" do
         params.each do |p|
             binding.pry
-            '@#{p[0]}' = p[1]
+             p[0] = App.new
+             p[0] = p[1] 
         end
         erb :team
     end
