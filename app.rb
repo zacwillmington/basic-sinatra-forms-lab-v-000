@@ -7,6 +7,10 @@ class App < Sinatra::Base
     end
 
     post "/team" do
+        params.each do |p|
+            binding.pry
+            p.send()
+        end
         erb :team 
     end
 end
